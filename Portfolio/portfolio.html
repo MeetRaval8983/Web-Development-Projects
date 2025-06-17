@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -36,7 +36,10 @@
 
         <div class="button-group">
           <a href="#hireme" class="btnhire">Hire me now</a>
-          <a href="#whatsapp" class="btnwhatsapp">WhatsApp</a>
+          <a href="#whatsapp" class="btnwhatsapp">
+            <img src="image.png" alt="WhatsApp" class ="whatsapp-icon" />
+            WhatsApp
+          </a>
         </div>
       </div>
       <div class="rightsection">
@@ -45,10 +48,104 @@
         </div>
       </div>
     </div>
+
+<section class="blue-bar">
+  <div class="scrolling-tags">
+    <span>Android Development</span>
+    <span>Web Development</span>
+    <span>UI/UX Design</span>
+    <span>IOT systems</span>
+    <span>Firebase Integration</span>
+    <span>App Deployment</span>
+  </div>
+</section>
+
   </section>
   
   </header>
 
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("nav-links");
+      const contactBtn = document.getElementById("contact-btn");
+      navLinks.classList.toggle("active");
+      contactBtn.classList.toggle("active");
+    }
+  </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meet Raval | Android & Web Developer</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Meet</div>
+      <button class="hamburger" onclick="toggleMenu()">
+        <img src="homeburger.png" alt="menu" class="menu-icon" />
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+      <a href="#contact" class="contact" id="contact-btn">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="mainsection">
+        <div class="leftsection">
+          <p class="label">HELLO I'M</p>
+          <h1 class="name">MEET RAVAL</h1>
+          <p class="skill">Android | Web | Flutter Developer</p>
+          <p class="desc">
+            I’m a passionate developer specializing in crafting high-performance mobile and web applications using Java, Flutter, Firebase, and modern web technologies. Clean UI, responsive design, and scalable code are my core strengths.
+          </p>
+          <div class="button-group">
+            <a href="#hireme" class="btnhire">Hire Me Now</a>
+            <a href="https://wa.me/91XXXXXXXX" target="_blank" class="btnwhatsapp">
+              <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon" />
+              WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="rightsection">
+          <div class="image-container">
+            <img src="Jay Hong.png" alt="Profile Image" class="profile-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill Tag Bar -->
+    <section class="blue-bar">
+      <div class="scrolling-tags">
+        <span>Android Development</span>
+        <span>Web Development</span>
+        <span>UI/UX Design</span>
+        <span>IoT Systems</span>
+        <span>Firebase Integration</span>
+        <span>App Deployment</span>
+      </div>
+    </section>
+  </header>
+
+  <!-- JavaScript for Hamburger Toggle -->
   <script>
     function toggleMenu() {
       const navLinks = document.getElementById("nav-links");

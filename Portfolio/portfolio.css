@@ -1,5 +1,4 @@
-/* Reset & Body Styling */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,7 +10,6 @@ body {
   color: #333;
 }
 
-/* Navbar */
 nav {
   max-width: 1200px;
   width: 100%;
@@ -29,7 +27,6 @@ nav {
   z-index: 1000;
 }
 
-/* Hamburger Button */
 .hamburger {
   display: none;
   background: none;
@@ -42,7 +39,6 @@ nav {
   height: 30px;
 }
 
-/* Logo */
 .logo {
   font-size: 24px;
   font-weight: 700;
@@ -50,8 +46,6 @@ nav {
   letter-spacing: 0.5px;
 }
 
-
-/* Navigation Links (Desktop) */
 .nav-links {
   list-style: none;
   display: flex;
@@ -73,7 +67,7 @@ nav {
   color: #007bff;
 }
 
-/* Contact Button (Desktop) */
+
 .contact {
   background-color: #007bff;
   color: white !important;
@@ -90,7 +84,7 @@ nav {
   box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
 }
 
-/* ===== Responsive Styles for Mobile ===== */
+
 @media screen and (max-width: 768px) {
   nav {
     flex-wrap: wrap;
@@ -173,14 +167,20 @@ nav {
 .button-group {
   margin-top: 20px;
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
 .button-group a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   padding: 10px 20px;
   border-radius: 10px;
-  width: 140px;
+  width: 170px;
+  height: 50px;
   font-weight: bold;
   font-size: 16px;
   transition: background-color 0.3s, box-shadow 0.3s;
@@ -192,10 +192,14 @@ nav {
 }
 
 .button-group .btnwhatsapp {
-  /* background-color: #25D366; */
   background-color: white;
   color: #04007f;
   border: 2px solid #04007f;
+}
+
+.button-group .btnwhatsapp .whatsapp-icon {
+  width: 30px;
+  height: 20px;
 }
 
 .rightsection {
@@ -226,5 +230,307 @@ nav {
     max-width: 100%;
     text-align: center;
     align-items: center;
+  }
+}
+
+.blue-bar {
+  background-color: #04007f;
+  color: white;
+  padding: 30px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scrolling-tags {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.scrolling-tags span {
+  position: relative;
+}
+
+.scrolling-tags span::after {
+  content: "★";
+  margin-left: 10px;
+  color: white;
+} */
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(145deg, #0f1115, #161b22);
+  color: #f1f1f1;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 240, 255, 0.08);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #00f0ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00f0ff;
+  background: rgba(0, 240, 255, 0.1);
+}
+
+.contact {
+  background-color: #00f0ff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 240, 255, 0.4);
+}
+
+.contact:hover {
+  background-color: #9f4eff;
+  color: #fff;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 28px;
+  height: 28px;
+  filter: invert(100%);
+}
+
+/* Hero */
+.hero {
+  padding: 60px 20px 40px;
+}
+
+.mainsection {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left */
+.leftsection {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.label {
+  font-size: 22px;
+  font-weight: 600;
+  color: #9f4eff;
+  text-transform: uppercase;
+}
+
+.name {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(to right, #00f0ff, #9f4eff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill {
+  font-size: 20px;
+  color: #b9b9b9;
+}
+
+.desc {
+  font-size: 16px;
+  color: #d5d5d5;
+  max-width: 600px;
+}
+
+/* Buttons */
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.button-group a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.btnhire {
+  background: linear-gradient(to right, #00f0ff, #00c3ff);
+  color: #000;
+  box-shadow: 0 6px 16px rgba(0, 240, 255, 0.3);
+}
+
+.btnhire:hover {
+  background: linear-gradient(to right, #9f4eff, #6a00ff);
+  color: #fff;
+}
+
+.btnwhatsapp {
+  background-color: transparent;
+  border: 2px solid #00f0ff;
+  color: #00f0ff;
+}
+
+.btnwhatsapp:hover {
+  background-color: #00f0ff;
+  color: #000;
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(1.2);
+}
+
+/* Right */
+.rightsection {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 240, 255, 0.15);
+  border: 3px solid #00f0ff;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Blue Bar */
+.blue-bar {
+  margin-top: 60px;
+  background: linear-gradient(to right, #00f0ff, #9f4eff);
+  padding: 16px 0;
+}
+
+.scrolling-tags {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.scrolling-tags span::after {
+  content: "•";
+  margin-left: 12px;
+  color: #000;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .contact.active {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .mainsection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .button-group {
+    justify-content: center;
   }
 }
